@@ -14,17 +14,17 @@ h1{
   background-color: #50C7C7; 
   color: black;
   text-align: center;
+  width: 100%;
 }
 
 .menu ul{
     color: black;
     border-bottom: 3px solid #50C7C7;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     padding: 12px;
     text-decoration: none;
     flex-direction: row;
-    flex-shrink: 3;
     align-items: center;
     align-content: stretch;
   }
