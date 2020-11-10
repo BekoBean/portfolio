@@ -72,6 +72,7 @@ h3{
 
 .experiences{
   flex-shrink: 5;
+  padding-right: 6px;
 }
 
 nav li a{
