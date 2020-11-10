@@ -1,20 +1,54 @@
 body{
   color:black;
-}
-
-#page-container{
-  /* position: relative; */
-  /* min-height: 100vh; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 
+#activeid{
+  text-transform: uppercase;
+  color: #50C7C7;
+  font-weight: bold;
+}
+
+
+.about-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.abouttext-block{
+  grid-area: 1/ 2;
+}
+
+.bob{
+  grid-area: 1/ 1;
+  width: 100%;
+  
+}
 
 h1{
-  font-size: 1.25em;
+  font-size: 2em;
+  padding: 6px ; 
+  font-family: 'roboto', sans-serif;
   background-color: #50C7C7; 
   color: black;
   text-align: center;
   width: 100%;
+}
+
+h2{
+  color: #50C7C7;
+  padding: 6px 6px 6px 0px; 
+  font-size: 1.5em;
+  font-family: 'roboto', sans-serif;
+
+}
+
+h3{
+  padding: 6px 6px 6px 0px; 
+  font-size: 1.1em;
+  font-family: 'roboto', sans-serif;
+
 }
 
 .menu ul{
@@ -39,8 +73,11 @@ nav li a{
   color: white;
 }
 
+
+
 nav li a:hover{
-  background-color: #ccc;
+  background-color: black;
+  padding: 10px;
   text-decoration: underline;
   text-decoration-color: white;
   text-decoration-style: dotted;
