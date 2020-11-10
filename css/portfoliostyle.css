@@ -19,13 +19,14 @@ h1{
 
 .menu ul{
     color: black;
-    border-bottom: 3px solid #50C7C7;
+    border-bottom: 3px solid #660066;
     display: flex;
     padding: 6px;
     text-decoration: none;
     flex-direction: row;
     align-items: center;
     align-content: stretch;
+    background-color: #660066;
   }
 
 .menu li{
@@ -35,11 +36,13 @@ h1{
 
 nav li a{
   text-decoration: none;
+  color: white;
 }
 
 nav li a:hover{
   background-color: #ccc;
   text-decoration: underline;
+  text-decoration-color: white;
   text-decoration-style: dotted;
 }
 
@@ -86,13 +89,14 @@ nav li a:hover{
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: auto auto;
   overflow: scroll;
+  background-color: #50C7C7
 }
 
 .image1{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 1/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
@@ -101,7 +105,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 1/ auto;
   grid-column: 2/ 3;
   overflow:hidden;
@@ -110,7 +114,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 2/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
@@ -120,7 +124,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 2/ auto;
   grid-column: 2/ auto;
   overflow:hidden;
@@ -129,7 +133,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 3/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
@@ -138,7 +142,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 3/ auto;
   grid-column: 2/ auto;
   overflow:hidden;
@@ -147,7 +151,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 4/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
@@ -156,7 +160,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 4/ auto;
   grid-column: 2/ auto;
   overflow:hidden;
@@ -166,7 +170,7 @@ nav li a:hover{
   width: 150px;
   height: 150px;
   margin: 5px;
-  border: 5px solid #50C7C7;
+  border: 5px solid #660066;
   grid-row: 5/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
@@ -181,7 +185,7 @@ footer{
   position: fixed;
   text-align:center;
   vertical-align: middle;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: #50C7C7;
 }
 
