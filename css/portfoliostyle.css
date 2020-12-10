@@ -14,20 +14,22 @@
 .about-container{
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto;
-}
-
-.abouttext-block{
-  grid-row: 2/ auto;
 }
 
 .bob{
   grid-row: 1/ auto;
    /* i changed width from 100 to 80 
   and height from nothing to 50 vh */
-  width: 80vw;
-  justify-items: center;
+  /* why cant i center the image */
+  width: 80%;
   height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.abouttext-block{
+  grid-row: 2/ auto;
 }
 
 h1{
@@ -141,10 +143,11 @@ nav li a:hover{
   grid-template-columns: auto auto;
   overflow: scroll;
   background-color: #50C7C7;
+  justify-items: center;
 }
 
 .image1{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -153,7 +156,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image2{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -162,7 +165,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image3{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -172,7 +175,7 @@ nav li a:hover{
 
 }
 .image4{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -181,7 +184,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image5{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -190,7 +193,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image6{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -199,7 +202,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image7{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -208,7 +211,7 @@ nav li a:hover{
   overflow:hidden;
 }
 .image8{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -218,7 +221,7 @@ nav li a:hover{
 
 }
 .image9{
-  width: 50%;
+  width: 42vw;
   height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
@@ -264,7 +267,7 @@ span{
 
 textarea{
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -308,11 +311,12 @@ input[type=submit]:hover {
 
   textarea{
     width:80%;
-    height: 25vh;
+    height: 80vh;
  }
  
  div + label{
-    line-height: 25vh;
+   /* before it was 25 */
+    line-height: 15vh;
     vertical-align:top;
  }
 }
@@ -329,9 +333,115 @@ footer{
   color: black;
   background-color: #50C7C7;
 }
+@media (min-width:600px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #gallery{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    overflow: scroll;
+    background-color: #50C7C7
+  }
+  .image1{
+    width: 30vw;
+    height: 25vh;    
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 1/ auto;
+    overflow:hidden;
+  }
+  .image2{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 2/ 3;
+    overflow:hidden;
+  }
+  .image3{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 3/ auto;
+    overflow:hidden;
+  
+  }
+  .image4{
+    width: 30vw;
+    height: 25vh;    
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 1/ auto;
+    overflow:hidden;
+  }
+  .image5{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 2/ auto;
+    overflow:hidden;
+  }
+  .image6{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 3/ auto;
+    overflow:hidden;
+  }
+  .image7{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 3/ auto;
+    grid-column: 1/ auto;
+    overflow:hidden;
+  }
+  .image8{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 3/ auto;
+    grid-column: 2/ auto;
+    overflow:hidden;
+  
+  }
+  .image9{
+    width: 30vw;
+    height: 25vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 3/ auto;
+    grid-column: 3/ auto;
+    overflow:hidden;
+  }
 
+  .about-container{
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
 
-@media (min-width: 800px){
+  .bob img{
+    grid-column: 1/ 2;
+  }
+  .abouttext-block{
+    grid-column: 2/ 3;
+  }
+} 
+
+@media (min-width: 1024px){
   #gallery{
     display: grid;
     grid-template-rows: auto auto;
@@ -425,6 +535,7 @@ footer{
 
   .about-container{
     display: grid;
+    width: 100%;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
   }
@@ -435,6 +546,5 @@ footer{
   .abouttext-block{
     grid-column: 2/ 3;
   }
-
 } 
 
