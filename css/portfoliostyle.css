@@ -1,7 +1,7 @@
-body{
+  body{
   color:black;
   font-family: 'Open Sans', sans-serif;
-}
+  }
 
 
 #activeid{
@@ -13,17 +13,21 @@ body{
 
 .about-container{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
 }
 
 .abouttext-block{
-  grid-area: 1/ 2;
+  grid-row: 2/ auto;
 }
 
 .bob{
-  grid-area: 1/ 1;
-  width: 100%;
-  
+  grid-row: 1/ auto;
+   /* i changed width from 100 to 80 
+  and height from nothing to 50 vh */
+  width: 80vw;
+  justify-items: center;
+  height: 50vh;
 }
 
 h1{
@@ -60,7 +64,7 @@ h3{
     border-bottom: 3px solid #660066;
     display: flex;
     padding: 6px;
-    width: 100%
+    width: 100%;
     text-decoration: none;
     flex-direction: row;
     flex-shrink: 1;
@@ -112,7 +116,6 @@ nav li a:hover{
 }
 
 
-
   /* 
   .nav_links{
     display: flex;
@@ -137,12 +140,12 @@ nav li a:hover{
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: auto auto;
   overflow: scroll;
-  background-color: #50C7C7
+  background-color: #50C7C7;
 }
 
 .image1{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 1/ auto;
@@ -150,17 +153,17 @@ nav li a:hover{
   overflow:hidden;
 }
 .image2{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 1/ auto;
-  grid-column: 2/ 3;
+  grid-column: 2/ auto;
   overflow:hidden;
 }
 .image3{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 2/ auto;
@@ -169,8 +172,8 @@ nav li a:hover{
 
 }
 .image4{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 2/ auto;
@@ -178,8 +181,8 @@ nav li a:hover{
   overflow:hidden;
 }
 .image5{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 3/ auto;
@@ -187,8 +190,8 @@ nav li a:hover{
   overflow:hidden;
 }
 .image6{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 3/ auto;
@@ -196,8 +199,8 @@ nav li a:hover{
   overflow:hidden;
 }
 .image7{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 4/ auto;
@@ -205,8 +208,8 @@ nav li a:hover{
   overflow:hidden;
 }
 .image8{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 4/ auto;
@@ -215,13 +218,103 @@ nav li a:hover{
 
 }
 .image9{
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 20vh;
   margin: 5px;
   border: 5px solid #660066;
   grid-row: 5/ auto;
   grid-column: 1/ auto;
   overflow:hidden;
+}
+
+#share{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* legend{ 
+  font-size: 125%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+} */
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 20vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=checkbox]{
+    display:inline;
+    width:inherit;
+}
+
+input[type=submit] {
+  background-color:  #660066;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
 }
 
 
@@ -236,4 +329,112 @@ footer{
   color: black;
   background-color: #50C7C7;
 }
+
+
+@media (min-width: 800px){
+  #gallery{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    overflow: scroll;
+    background-color: #50C7C7
+  }
+  .image1{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 1/ auto;
+    overflow:hidden;
+  }
+  .image2{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 2/ 3;
+    overflow:hidden;
+  }
+  .image3{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 3/ auto;
+    overflow:hidden;
+  
+  }
+  .image4{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 4/ auto;
+    overflow:hidden;
+  }
+  .image5{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 1/ auto;
+    grid-column: 5/ auto;
+    overflow:hidden;
+  }
+  .image6{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 1/ auto;
+    overflow:hidden;
+  }
+  .image7{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 2/ auto;
+    overflow:hidden;
+  }
+  .image8{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 3/ auto;
+    overflow:hidden;
+  
+  }
+  .image9{
+    width: 20vw;
+    height: 50vh;
+    margin: 5px;
+    border: 5px solid #660066;
+    grid-row: 2/ auto;
+    grid-column: 4/ auto;
+    overflow:hidden;
+  }
+
+  .about-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .bob img{
+    grid-column: 1/ 2;
+  }
+  .abouttext-block{
+    grid-column: 2/ 3;
+  }
+
+} 
 
