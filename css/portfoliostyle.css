@@ -52,7 +52,6 @@ h1{
 }
 
 h2{
-  color: #50C7C7;
   padding: 6px 6px 6px 0px; 
   font-size: 1.5em;
   font-family: 'roboto', sans-serif;
@@ -64,6 +63,11 @@ h3{
   font-size: 1.1em;
   font-family: 'roboto', sans-serif;
 
+}
+
+.text-block{
+  margin: 5px 0px;
+  padding: 5px 0px;
 }
 
 .contacting{
@@ -297,11 +301,11 @@ nav li a:hover{
 }
 
 #share{
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 form {
+  padding-top: 5px;
   border: 3px solid #f1f1f1;
 }
 

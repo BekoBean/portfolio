@@ -14,7 +14,7 @@
         <header>
             <h1>Ben's Favorite Restaurants</h1>
         </header>
-            <div class="skip"><a href="#about">Skip to Main Content</a></div>
+            <div class="skip"><a href="#skip">Skip to Main Content</a></div>
             <nav class="menu">
                 <ul>
                     <li><a href="about.html">About</a></li>
@@ -23,12 +23,12 @@
                     <li><a href="contact.html" id="activeid" class="contacting">Contact</a></li>
                 </ul>
             </nav>
-      
+        <main>
         <h2>Contact</h2>
         <p id="share">If you want to share about any good recipes, favorite restaurants,
           or meaningful experiences, please fill out the contact form below.
         </p>
-        <form action="https://formspree.io/f/xknpqbnl"  method="POST">
+        <form action="https://formspree.io/f/xknpqbnl"  method="POST" id="skip">
           <fieldset>
             <!-- <legend>Sample Form</legend> -->
         
@@ -39,7 +39,7 @@
             <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
         
             <label for="phone_id">Your Phone Number</label>
-            <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" name="phone" id="phone_id" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <div><span>Format: 123-456-7890</span></div>
         
         
@@ -49,6 +49,7 @@
             <input type="submit" value = "Contact Me">
           </fieldset>
          </form>
+        </main>
             <!-- 
     <div class="about-image">
       <img src="images/about.jpg" alt=""/>
