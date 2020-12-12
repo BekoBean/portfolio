@@ -5,11 +5,14 @@
 * Browsers: last 4 version
 */
 
-  body{
-  color:black;
-  font-family: 'Open Sans', sans-serif;
-  }
+body{
+color:black;
+font-family: 'Open Sans', sans-serif;
+}
 
+#blue{
+  background-color: #50C7C7;
+}
 
 #activeid{
   text-transform: uppercase;
@@ -151,6 +154,8 @@ nav li a:hover{
   display:none;
 }
 #gallery{
+  align-content: center;
+  justify-content: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto auto auto auto;
