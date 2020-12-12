@@ -24,6 +24,7 @@
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
+  overflow: scroll; 
 }
 
 .bob{
